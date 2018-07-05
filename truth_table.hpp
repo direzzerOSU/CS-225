@@ -8,10 +8,11 @@
 
 class truth_table{
 private:
-  int numPropositions;
-  int num_logic_statements;
-  int total_propositions;
-  std::string* propositions;    // double array truth_table
+  int numPropositions = 0;
+  int num_logic_statements = 0;
+  int total_propositions = 0;
+  // std::string* propositions[pow(2, numPropositions)][numPropositions];
+  bool* propositions;    // double array truth_table
   std::string* header = new std::string[total_propositions];
 public:
   truth_table(int prop, int total);
